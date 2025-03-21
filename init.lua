@@ -854,7 +854,11 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'gruvbox-material'
+      --vim.cmd.colorscheme 'gruvbox-material'
+      --vim.cmd.colorscheme 'everforest'
+      --vim.cmd.colorscheme 'sonokai'
+      --vim.cmd.colorscheme 'nightfox'
+      vim.cmd.colorscheme 'terafox'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
@@ -974,6 +978,9 @@ require('lazy').setup({
     },
   },
 })
+
+-- custom keymaps
+vim.keymap.set('n', '<C-w>r', ':vertical resize 160<CR>', { noremap = true, silent = true })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
