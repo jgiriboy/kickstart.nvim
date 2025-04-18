@@ -663,6 +663,7 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'rust-analyzer',
         'ast-grep',
+        'black',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -854,11 +855,10 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      --vim.cmd.colorscheme 'gruvbox-material'
-      --vim.cmd.colorscheme 'everforest'
-      --vim.cmd.colorscheme 'sonokai'
       --vim.cmd.colorscheme 'nightfox'
-      vim.cmd.colorscheme 'terafox'
+      --vim.cmd.colorscheme 'terafox'
+      --vim.cmd.colorscheme 'vesper'
+      vim.cmd.colorscheme 'vscode'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
